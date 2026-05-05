@@ -1,0 +1,14 @@
+<!doctype html><html lang='pt-BR'><head><meta charset='UTF-8'/><meta name='viewport' content='width=device-width, initial-scale=1.0'/><title>App de Controle de Gastos do Motorista</title><link rel='stylesheet' href='styles.css'/></head><body><main class='container'><section class='card'><h1>App de Controle de Gastos do Motorista</h1><p>Preencha seus números e clique em <strong>Calcular meu lucro</strong>.</p><form id='calcForm' class='grid-2'>
+<label>Ganho bruto do mês (R$)<input name='gross' type='number' step='0.01' required></label>
+<label>Combustível (R$)<input name='fuel' type='number' step='0.01' required></label>
+<label>Manutenção (R$)<input name='maint' type='number' step='0.01' required></label>
+<label>Lavagem (R$)<input name='wash' type='number' step='0.01' required></label>
+<label>Alimentação (R$)<input name='food' type='number' step='0.01' required></label>
+<label>Estacionamento (R$)<input name='park' type='number' step='0.01' required></label>
+<label>Seguro (R$)<input name='ins' type='number' step='0.01' required></label>
+<label>IPVA/licenciamento (R$)<input name='ipva' type='number' step='0.01' required></label>
+<label>Financiamento/aluguel (R$)<input name='car' type='number' step='0.01' required></label>
+<label>Quilômetros rodados<input name='km' type='number' step='0.01' required></label>
+<label>Dias trabalhados<input name='days' type='number' step='1' required></label>
+<label>Horas trabalhadas<input name='hours' type='number' step='0.01' required></label>
+</form><div class='actions'><button class='btn' id='calcBtn'>Calcular meu lucro</button><button class='btn ghost' id='clearBtn'>Limpar dados</button></div><p id='error' class='error'></p><div id='results' class='grid-3'></div></section></main><script src='script.js'></script></body></html>
